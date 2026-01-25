@@ -1,0 +1,15 @@
+ID,Task Name,Duration,Predecessors,Phase,Notes
+1,Initialize Repo captive.integralmass.com,1d,,Setup,Git init, .gitignore, README
+2,Define Risk Parameters (CSV Data),2d,1,Data,Create actuarial tables for prefab defects/utility failures
+3,Code: General Contractor Objects (Python),2d,1,Simulation,Class for 12 GCs with skill attributes
+4,Code: Market Models (Student/Rural/Multigen),2d,3,Simulation,Define revenue/risk profiles for the 3 markets
+5,Code: Queuing Engine (Resource Planning),3d,3,Simulation,Simulate installation bottlenecks (GC availability)
+6,Code: Financial Instrument Logic,3d,4,Simulation,The "Rent-to-Equity" interest accumulation logic
+7,Code: Monte Carlo Risk Solver,4d,5;6,Simulation,Simulate 10,000 years of operation to test solvency
+8,Web: Landing Page Structure (HTML/CSS),2d,1,Website,The "Front Door" for ACIA regulators
+9,Web: Market Explainer Pages,3d,8,Website,Documentation of the 3 housing types
+10,Integration: Python to HTML Export,2d,7;8,Integration,Script to output matplotlib graphs to /docs/assets
+11,Web: Simulation Dashboard,2d,10,Website,Page showing live solvency ratios and resource graphs
+12,CI/CD: Automate Sim on Push,1d,11,DevOps,GitHub Action to re-run math when data changes
+13,Documentation: Compliance Narrative,3d,11,Content,Writing the "Business Plan" text for the site
+14,Final Review & Domain DNS,1d,13,Launch,Point captive.integralmass.com to GitHub Pages

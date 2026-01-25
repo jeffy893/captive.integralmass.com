@@ -1,0 +1,13 @@
+id,name,skill_level,specialization,max_concurrent_jobs
+1,GC-01,0.87,student,3
+2,GC-02,0.92,student,4
+3,GC-03,0.78,student,3
+4,GC-04,0.85,student,3
+5,GC-05,0.91,multigen,4
+6,GC-06,0.88,multigen,3
+7,GC-07,0.82,multigen,3
+8,GC-08,0.89,multigen,4
+9,GC-09,0.84,rural,3
+10,GC-10,0.79,rural,2
+11,GC-11,0.86,rural,3
+12,GC-12,0.90,rural,4
