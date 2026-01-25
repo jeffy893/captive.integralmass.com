@@ -162,7 +162,7 @@ def create_gc_roster() -> List[GeneralContractor]:
             name=f"GC-{i+1:02d}",
             skill_level=random.uniform(0.6, 0.95),
             specialization=specializations[i],
-            max_concurrent_jobs=random.randint(2, 4)
+            max_concurrent_jobs=1  # One job at a time for realistic queuing
         )
         gcs.append(gc)
     

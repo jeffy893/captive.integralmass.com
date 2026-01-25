@@ -111,7 +111,8 @@ def run_queue_analysis():
     print("QUEUING SIMULATION ANALYSIS")
     print("="*60)
     
-    results = run_queue_sim(simulation_days=365, units_per_market=40)
+    # Increased units to create more realistic queuing behavior
+    results = run_queue_sim(simulation_days=365, units_per_market=60)
     
     # Create visualizations
     fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(14, 10))
