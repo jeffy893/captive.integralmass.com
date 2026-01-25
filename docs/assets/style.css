@@ -564,3 +564,232 @@ footer {
         margin-top: 0.5rem;
     }
 }
+
+/* Organization Page Styles */
+
+.org-structure {
+    background-color: var(--light-bg);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--secondary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.team-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.team-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tool-badge {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Communication Section */
+.communication {
+    background-color: var(--white);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.comm-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.comm-card:hover {
+    transform: translateY(-3px);
+}
+
+.comm-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Floor Plan Section */
+.floor-plan {
+    background-color: var(--white);
+}
+
+.floor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.floor-card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border: 2px solid var(--light-bg);
+}
+
+.floor-header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+}
+
+.floor-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.floor-badge {
+    background-color: rgba(255,255,255,0.2);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.floor-content {
+    padding: 2rem;
+}
+
+.floor-stat {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem 2rem 1rem 0;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.floor-features {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--light-bg);
+    border-radius: 4px;
+}
+
+.floor-features h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.floor-features ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.floor-features li {
+    padding: 0.3rem 0;
+    color: #555;
+}
+
+/* Floor-specific colors */
+.floor-1 .floor-header {
+    background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
+}
+
+.floor-2 .floor-header {
+    background: linear-gradient(135deg, #3498DB 0%, #2874A6 100%);
+}
+
+.floor-3 .floor-header {
+    background: linear-gradient(135deg, #9B59B6 0%, #7D3C98 100%);
+}
+
+/* Key Considerations Section */
+.key-considerations {
+    background-color: var(--light-bg);
+}
+
+.consideration-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.consideration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.consideration-card .card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.consideration-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments for organization page */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .floor-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .floor-stat {
+        margin: 1rem 1rem 1rem 0;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
