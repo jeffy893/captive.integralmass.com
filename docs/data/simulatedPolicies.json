@@ -1,0 +1,776 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "standard": "Lloyd's MRC / ACORD Inspired",
+    "captive_name": "Integral Mass Captive Insurance",
+    "jurisdiction": "Arizona",
+    "business_focus": "Prefab Housing Installation - General Contractor Coverage",
+    "last_updated": "2026-01-31"
+  },
+  "policies": [
+    {
+      "policy_number": "IMCI-STU-2026-001",
+      "insured_entity": {
+        "name": "Phoenix Student Housing Builders LLC",
+        "entity_type": "Limited Liability Company",
+        "tax_id": "XX-XXXXXXX",
+        "address": {
+          "street": "1200 University Drive, Suite 300",
+          "city": "Tempe",
+          "state": "AZ",
+          "zip": "85281"
+        },
+        "contact": {
+          "name": "Michael Torres, Operations Manager",
+          "phone": "(480) 555-1001",
+          "email": "m.torres@phxstudentbuilders.example"
+        }
+      },
+      "risk_class": {
+        "primary": "General Contractor - Prefab Housing Installation",
+        "sub_class": "Student Housing Market Segment",
+        "market_segment": "Student Housing - High Volume, Standardized Units",
+        "sic_code": "1521",
+        "naics_code": "236118"
+      },
+      "coverage": {
+        "limit_of_liability": {
+          "per_occurrence": 250000,
+          "aggregate": 1000000,
+          "currency": "USD"
+        },
+        "deductible": {
+          "amount": 5000,
+          "currency": "USD",
+          "applies_to": "per_occurrence"
+        },
+        "covered_perils": [
+          "Construction Defects - Structural Integrity",
+          "Construction Defects - Material Failures",
+          "Construction Defects - Installation Errors",
+          "Construction Defects - Code Compliance Violations",
+          "Utility Integration - Water Connection Failures",
+          "Utility Integration - Electrical System Issues",
+          "Utility Integration - Gas Line Problems",
+          "Schedule Delays - GC Availability Constraints",
+          "Schedule Delays - Supply Chain Disruptions",
+          "Schedule Delays - Weather-Related Delays"
+        ]
+      },
+      "term": {
+        "effective_date": "2026-01-01",
+        "expiration_date": "2026-12-31",
+        "policy_period_days": 365
+      },
+      "premium": {
+        "base_premium": 50000,
+        "experience_modification": 0,
+        "market_segment_factor": 0,
+        "volume_discount": -2500,
+        "safety_credit": -2500,
+        "total_premium": 45000,
+        "currency": "USD",
+        "payment_terms": "Quarterly",
+        "installments": 4
+      },
+      "status": "Active",
+      "underwriting": {
+        "underwriter": "Integral Mass Captive Insurance - Internal Underwriting",
+        "approval_date": "2025-12-15",
+        "renewal_eligible": true,
+        "claims_made_basis": false,
+        "occurrence_basis": true
+      },
+      "risk_narrative": {
+        "summary": "STUDENT HOUSING INSTALLATION COVERAGE. The Insured specializes in rapid deployment of prefabricated housing units for university student populations near Arizona State University campuses. This policy responds to losses arising from construction defects, utility integration failures, and schedule delays affecting student housing occupancy timelines.",
+        "operations_description": "NATURE OF BUSINESS: The Insured installs standardized prefab housing units designed for student occupancy, typically 400-600 sq ft studio and one-bedroom configurations. Operations include site preparation, foundation work, unit placement via crane, utility connections (water, electrical, gas, internet), and final inspections. Average installation timeline: 5-7 days per unit.\n\nANNUAL VOLUME: 60-80 units per year across three ASU campus areas (Tempe, Downtown Phoenix, Polytechnic). Peak installation periods: May-July (pre-fall semester) and December-January (pre-spring semester). Units designed for 4-year lifespan with minimal maintenance.\n\nSUBCONTRACTOR NETWORK: Licensed electricians (3 firms), plumbers (2 firms), HVAC specialists (2 firms), foundation contractors (2 firms). All subcontractors carry minimum $1M general liability coverage and workers compensation insurance.",
+        "risk_factors": [
+          "TIGHT OCCUPANCY DEADLINES: Student housing must be ready before semester start dates. Delays trigger penalty clauses in developer contracts ($500-$1,000 per day per unit). Schedule risk represents 20% of expected claims.",
+          "FOUNDATION CHALLENGES: Arizona soil conditions (caliche layers, expansive clay) create foundation settlement risks. Improper site preparation can cause structural issues within 12-24 months. Foundation-related defects represent 15% of historical claims.",
+          "UTILITY INTEGRATION COMPLEXITY: Connecting prefab units to existing campus utility infrastructure requires precise coordination. Water line failures, electrical panel issues, and gas connection problems represent 40% of claims.",
+          "CODE COMPLIANCE VARIATIONS: Building codes vary between Tempe, Phoenix, and Maricopa County jurisdictions. Misinterpretation of local amendments creates compliance risk. Code violations represent 10% of claims.",
+          "WEATHER EXPOSURE: Summer monsoon season (July-September) creates installation delays and potential water intrusion during open construction phases. Lightning strikes can damage electrical systems during installation.",
+          "SUBCONTRACTOR QUALITY: Reliance on subcontractors for specialized trades creates quality control challenges. Subcontractor errors account for 60% of utility integration claims."
+        ],
+        "loss_control_measures": [
+          "PRE-INSTALLATION SITE SURVEYS: Geotechnical analysis of all sites prior to foundation work. Soil testing identifies caliche layers and expansive clay requiring specialized foundation designs.",
+          "STANDARDIZED INSTALLATION PROTOCOLS: Detailed checklists for each installation phase with photographic documentation. Quality control inspections at foundation, placement, utility connection, and final stages.",
+          "SUBCONTRACTOR PREQUALIFICATION: Annual review of subcontractor licenses, insurance coverage, and performance history. Preferred vendor program with performance-based incentives.",
+          "WEATHER MONITORING: Integration with NOAA weather alerts for monsoon forecasting. Installation scheduling avoids high-risk weather windows. Temporary weather protection during utility connection phases.",
+          "CODE COMPLIANCE TRAINING: Quarterly training sessions on jurisdiction-specific code requirements. Pre-installation permit review with local building departments.",
+          "RAPID RESPONSE PROTOCOL: 24-hour emergency response capability for utility failures. On-call electrician and plumber available during peak occupancy periods (August, January)."
+        ],
+        "geographic_scope": "Maricopa County, Arizona (Tempe, Phoenix, Mesa)",
+        "annual_revenue": 4800000,
+        "units_installed_annually": 70,
+        "average_unit_value": 85000
+      },
+      "claims_history": {
+        "prior_3_years": {
+          "total_claims": 4,
+          "total_incurred": 87500,
+          "claims_detail": [
+            {
+              "date": "2024-08-12",
+              "type": "Water Line Failure - Utility Integration",
+              "amount": 28000,
+              "status": "Closed",
+              "description": "Copper water line connection failed 3 days after occupancy due to improper soldering. Flooded 2 adjacent units. Emergency repairs and temporary housing costs."
+            },
+            {
+              "date": "2024-11-05",
+              "type": "Foundation Settlement - Construction Defect",
+              "amount": 35000,
+              "status": "Closed",
+              "description": "Inadequate site compaction caused foundation settlement in 1 unit. Structural cracks in walls and floor. Required foundation underpinning and cosmetic repairs."
+            },
+            {
+              "date": "2025-07-20",
+              "type": "Schedule Delay - Weather",
+              "amount": 15000,
+              "status": "Closed",
+              "description": "Monsoon storms delayed installation by 8 days. Developer penalty clause triggered. $1,875 per day for 8 days."
+            },
+            {
+              "date": "2025-09-15",
+              "type": "Electrical Panel Issue - Utility Integration",
+              "amount": 9500,
+              "status": "Closed",
+              "description": "Electrical panel improperly sized for unit load. Breaker trips during peak usage. Panel replacement and rewiring required."
+            }
+          ]
+        }
+      },
+      "reinsurance": {
+        "treaty_applicable": false,
+        "excess_of_loss_attachment": 250000,
+        "reinsurer": "N/A - Retained within captive",
+        "reinsurance_premium": 0
+      },
+      "special_conditions": {
+        "tail_coverage": "10-year extended reporting period for construction defects discovered after policy expiration",
+        "subcontractor_requirements": "All subcontractors must maintain minimum $1M general liability and workers compensation coverage",
+        "inspection_protocols": "Mandatory third-party inspection at foundation, placement, and final stages",
+        "schedule_delay_coverage": {
+          "sublimit": 50000,
+          "trigger": "Delays exceeding 5 business days due to covered perils",
+          "daily_penalty_cap": 2000
+        }
+      }
+    },
+    {
+      "policy_number": "IMCI-MUL-2026-002",
+      "insured_entity": {
+        "name": "Generations United Construction Inc",
+        "entity_type": "Corporation",
+        "tax_id": "XX-XXXXXXX",
+        "address": {
+          "street": "3400 Family Living Boulevard",
+          "city": "Scottsdale",
+          "state": "AZ",
+          "zip": "85260"
+        },
+        "contact": {
+          "name": "Sarah Chen, Project Director",
+          "phone": "(480) 555-2002",
+          "email": "s.chen@generationsunited.example"
+        }
+      },
+      "risk_class": {
+        "primary": "General Contractor - Prefab Housing Installation",
+        "sub_class": "Multi-Generational Housing Market Segment",
+        "market_segment": "Multi-Generational - Rent-to-Equity Financial Instrument",
+        "sic_code": "1521",
+        "naics_code": "236118"
+      },
+      "coverage": {
+        "limit_of_liability": {
+          "per_occurrence": 250000,
+          "aggregate": 1000000,
+          "currency": "USD"
+        },
+        "deductible": {
+          "amount": 5000,
+          "currency": "USD",
+          "applies_to": "per_occurrence"
+        },
+        "covered_perils": [
+          "Construction Defects - Accessibility Feature Failures",
+          "Construction Defects - ADU Structural Issues",
+          "Construction Defects - Material Defects",
+          "Utility Integration - Dual-Meter Installation Errors",
+          "Utility Integration - Separate HVAC System Failures",
+          "Utility Integration - Water Heater Issues",
+          "Schedule Delays - Financial Instrument Closing Deadlines",
+          "Schedule Delays - Permit Processing Delays",
+          "Code Compliance - ADA Accessibility Violations"
+        ]
+      },
+      "term": {
+        "effective_date": "2026-01-01",
+        "expiration_date": "2026-12-31",
+        "policy_period_days": 365
+      },
+      "premium": {
+        "base_premium": 50000,
+        "experience_modification": -5000,
+        "market_segment_factor": -5000,
+        "volume_discount": 0,
+        "safety_credit": -5000,
+        "total_premium": 35000,
+        "currency": "USD",
+        "payment_terms": "Quarterly",
+        "installments": 4
+      },
+      "status": "Active",
+      "underwriting": {
+        "underwriter": "Integral Mass Captive Insurance - Internal Underwriting",
+        "approval_date": "2025-12-10",
+        "renewal_eligible": true,
+        "claims_made_basis": false,
+        "occurrence_basis": true
+      },
+      "risk_narrative": {
+        "summary": "MULTI-GENERATIONAL HOUSING INSTALLATION COVERAGE. The Insured specializes in installing prefab Accessory Dwelling Units (ADUs) designed for multi-generational living arrangements with integrated rent-to-equity financial instruments. This policy responds to losses arising from accessibility feature failures, dual-utility integration issues, and schedule delays affecting financial instrument closing deadlines.",
+        "operations_description": "NATURE OF BUSINESS: The Insured installs prefab ADUs (600-900 sq ft) on existing residential properties, designed for parent-child multi-generational living. Units feature accessibility modifications (zero-step entries, wider doorways, grab bars, roll-in showers) anticipating future residence swap when parents require accessible features. Installations include separate utility metering to support rent-to-equity financial instrument structure.\n\nFINANCIAL INSTRUMENT INTEGRATION: Each installation supports a rent-to-equity agreement where parents invest in ADU construction, children pay rent that accumulates with interest, and equity transfers over 15-20 years. Installation quality directly impacts financial instrument viability—defects can trigger payment defaults and equity calculation disputes.\n\nANNUAL VOLUME: 40-50 units per year across Scottsdale, Paradise Valley, and North Phoenix affluent neighborhoods. Average installation timeline: 8-12 days per unit due to accessibility feature complexity and dual-utility requirements.",
+        "risk_factors": [
+          "ACCESSIBILITY FEATURE COMPLEXITY: ADA-compliant features (ramps, grab bars, roll-in showers) require precise installation. Failures create liability exposure and financial instrument disputes. Accessibility defects represent 25% of claims.",
+          "DUAL-UTILITY METERING: Separate utility meters required for rent payment calculations. Metering errors create billing disputes affecting equity accumulation. Utility integration issues represent 40% of claims.",
+          "FINANCIAL INSTRUMENT DEADLINES: Rent-to-equity agreements have specific closing dates tied to tax year planning. Installation delays can void financial instruments, triggering contract penalties. Schedule delays represent 15% of claims.",
+          "ZONING COMPLIANCE: ADU regulations vary by municipality and HOA. Setback violations, height restrictions, and parking requirements create compliance risk. Zoning violations represent 10% of claims.",
+          "EXISTING PROPERTY INTEGRATION: Connecting ADU to existing home's utilities and matching architectural styles creates complexity. Integration failures represent 30% of claims.",
+          "LONG-TERM WARRANTY EXPOSURE: 10-year construction defect tail coverage creates extended liability period. Defects discovered years after installation can trigger claims."
+        ],
+        "loss_control_measures": [
+          "ADA COMPLIANCE CERTIFICATION: All accessibility features installed by certified ADA specialists. Third-party accessibility audits before final inspection.",
+          "UTILITY METERING VERIFICATION: Independent meter testing and calibration before occupancy. Documentation of meter readings at installation completion.",
+          "FINANCIAL INSTRUMENT COORDINATION: Direct communication with financial instrument administrators to align installation schedules with closing deadlines. Contingency planning for weather delays.",
+          "ZONING PRE-CLEARANCE: Comprehensive zoning analysis before contract execution. Pre-application meetings with planning departments to identify potential issues.",
+          "ARCHITECTURAL INTEGRATION REVIEW: Design review process ensures ADU matches existing home's architectural style and materials. Homeowner approval at multiple milestones.",
+          "EXTENDED WARRANTY PROGRAM: Proactive 5-year inspection program identifies potential defects before they escalate. Preventive maintenance recommendations to homeowners."
+        ],
+        "geographic_scope": "Maricopa County, Arizona (Scottsdale, Paradise Valley, North Phoenix)",
+        "annual_revenue": 4500000,
+        "units_installed_annually": 45,
+        "average_unit_value": 120000
+      },
+      "claims_history": {
+        "prior_3_years": {
+          "total_claims": 2,
+          "total_incurred": 52000,
+          "claims_detail": [
+            {
+              "date": "2024-06-18",
+              "type": "Accessibility Feature Failure - Grab Bar Installation",
+              "amount": 18000,
+              "status": "Closed",
+              "description": "Grab bars in shower not properly anchored to studs. Failed during use, causing fall injury. Liability claim and corrective installation across 3 units with same defect."
+            },
+            {
+              "date": "2025-03-22",
+              "type": "Utility Metering Error - Dual-Meter Installation",
+              "amount": 34000,
+              "status": "Closed",
+              "description": "Water meter cross-connected between main house and ADU. 8 months of billing disputes affecting rent-to-equity calculations. Meter replacement and financial instrument recalculation costs."
+            }
+          ]
+        }
+      },
+      "reinsurance": {
+        "treaty_applicable": false,
+        "excess_of_loss_attachment": 250000,
+        "reinsurer": "N/A - Retained within captive",
+        "reinsurance_premium": 0
+      },
+      "special_conditions": {
+        "tail_coverage": "10-year extended reporting period for construction defects and accessibility feature failures",
+        "financial_instrument_protection": {
+          "sublimit": 100000,
+          "coverage": "Delays or defects causing financial instrument voidance or equity calculation disputes"
+        },
+        "accessibility_compliance": "Mandatory ADA certification for all accessibility feature installations",
+        "zoning_compliance_warranty": "Coverage for zoning violations discovered within 24 months of installation"
+      }
+    },
+    {
+      "policy_number": "IMCI-RUR-2026-003",
+      "insured_entity": {
+        "name": "Desert Frontier Builders LLC",
+        "entity_type": "Limited Liability Company",
+        "tax_id": "XX-XXXXXXX",
+        "address": {
+          "street": "8200 Rural Route 7, Building A",
+          "city": "Casa Grande",
+          "state": "AZ",
+          "zip": "85122"
+        },
+        "contact": {
+          "name": "Robert Martinez, Field Operations Manager",
+          "phone": "(520) 555-3003",
+          "email": "r.martinez@desertfrontier.example"
+        }
+      },
+      "risk_class": {
+        "primary": "General Contractor - Prefab Housing Installation",
+        "sub_class": "Rural Development Market Segment",
+        "market_segment": "Rural Development - Off-Grid and Remote Installations",
+        "sic_code": "1521",
+        "naics_code": "236118"
+      },
+      "coverage": {
+        "limit_of_liability": {
+          "per_occurrence": 250000,
+          "aggregate": 1000000,
+          "currency": "USD"
+        },
+        "deductible": {
+          "amount": 5000,
+          "currency": "USD",
+          "applies_to": "per_occurrence"
+        },
+        "covered_perils": [
+          "Construction Defects - Foundation Issues on Unstable Soil",
+          "Construction Defects - Wind Resistance Failures",
+          "Utility Integration - Septic System Failures",
+          "Utility Integration - Well Water System Issues",
+          "Utility Integration - Solar Power System Defects",
+          "Utility Integration - Propane System Problems",
+          "Schedule Delays - Remote Site Access Issues",
+          "Schedule Delays - Equipment Transportation Delays",
+          "Environmental Issues - Drainage and Erosion"
+        ]
+      },
+      "term": {
+        "effective_date": "2026-01-01",
+        "expiration_date": "2026-12-31",
+        "policy_period_days": 365
+      },
+      "premium": {
+        "base_premium": 50000,
+        "experience_modification": 5000,
+        "market_segment_factor": 5000,
+        "volume_discount": 0,
+        "safety_credit": -2500,
+        "total_premium": 57500,
+        "currency": "USD",
+        "payment_terms": "Quarterly",
+        "installments": 4
+      },
+      "status": "Active",
+      "underwriting": {
+        "underwriter": "Integral Mass Captive Insurance - Internal Underwriting",
+        "approval_date": "2025-12-20",
+        "renewal_eligible": true,
+        "claims_made_basis": false,
+        "occurrence_basis": true
+      },
+      "risk_narrative": {
+        "summary": "RURAL DEVELOPMENT INSTALLATION COVERAGE. The Insured specializes in installing prefab housing units in remote rural locations, often requiring off-grid utility solutions including septic systems, well water, solar power, and propane. This policy responds to losses arising from foundation challenges on unstable soils, off-grid utility system failures, and schedule delays due to remote site access issues.",
+        "operations_description": "NATURE OF BUSINESS: The Insured installs prefab housing units (800-1,200 sq ft) in rural Pinal County locations, typically 15-40 miles from municipal services. Installations require complete off-grid utility infrastructure: septic systems, well drilling coordination, solar panel arrays with battery storage, propane tank installation, and satellite internet. Average installation timeline: 15-25 days per unit due to utility complexity and remote access.\n\nSITE CHALLENGES: Rural sites present unique challenges including unpaved access roads, unstable desert soils, extreme temperature variations, high wind exposure, and limited emergency service access. Sites often lack cell phone coverage, requiring satellite communication for coordination.\n\nANNUAL VOLUME: 30-40 units per year across Pinal County rural areas. Peak installation periods: October-April (avoiding extreme summer heat). Units designed for permanent residence by retirees, remote workers, and agricultural workers.",
+        "risk_factors": [
+          "SEPTIC SYSTEM COMPLEXITY: Soil percolation testing required for septic design. Clay soils and high water tables create septic failure risk. Septic issues represent 25% of claims and can cost $15K-$40K to remediate.",
+          "WELL WATER QUALITY: Well drilling coordination with licensed drillers. Water quality testing may reveal contamination requiring filtration systems. Well-related issues represent 15% of claims.",
+          "SOLAR POWER SYSTEM SIZING: Off-grid solar systems must be precisely sized for household load. Undersized systems create power shortages; oversized systems waste capital. Solar defects represent 20% of claims.",
+          "FOUNDATION CHALLENGES: Desert soils (caliche, expansive clay, sandy loam) create foundation settlement and heaving risks. Soil testing and engineered foundations required. Foundation issues represent 25% of claims.",
+          "WIND EXPOSURE: Rural sites lack windbreaks. High winds (60+ mph) can damage roofing, siding, and solar panels. Wind damage represents 10% of claims.",
+          "REMOTE ACCESS: Unpaved roads become impassable during monsoon season. Equipment transportation delays and emergency response limitations create schedule risk. Access issues represent 15% of claims."
+        ],
+        "loss_control_measures": [
+          "COMPREHENSIVE SITE ASSESSMENT: Geotechnical analysis, percolation testing, well yield testing, and solar exposure analysis before contract execution. Site suitability report provided to homeowner.",
+          "LICENSED SPECIALIST COORDINATION: Partnerships with licensed well drillers, septic installers, and solar contractors. All specialists carry appropriate licenses and insurance.",
+          "ENGINEERED FOUNDATION DESIGNS: Structural engineer review of foundation plans for each site based on soil conditions. Pier-and-beam or reinforced slab designs for problematic soils.",
+          "WIND RESISTANCE CERTIFICATION: All units certified for 110 mph wind loads. Enhanced roof attachment and siding fastening in high-wind areas.",
+          "WEATHER CONTINGENCY PLANNING: Installation scheduling avoids monsoon season (July-September). Alternative access routes identified for each site.",
+          "UTILITY SYSTEM COMMISSIONING: Third-party testing and commissioning of septic, well, solar, and propane systems before occupancy. Homeowner training on off-grid system operation."
+        ],
+        "geographic_scope": "Pinal County, Arizona (Casa Grande, Eloy, Arizona City, Coolidge rural areas)",
+        "annual_revenue": 4200000,
+        "units_installed_annually": 35,
+        "average_unit_value": 140000
+      },
+      "claims_history": {
+        "prior_3_years": {
+          "total_claims": 5,
+          "total_incurred": 142000,
+          "claims_detail": [
+            {
+              "date": "2023-11-10",
+              "type": "Septic System Failure - Utility Integration",
+              "amount": 38000,
+              "status": "Closed",
+              "description": "Septic drain field installed in clay soil with inadequate percolation. System backed up within 6 months. Required complete drain field replacement in different location."
+            },
+            {
+              "date": "2024-05-15",
+              "type": "Foundation Settlement - Construction Defect",
+              "amount": 45000,
+              "status": "Closed",
+              "description": "Foundation settled 3 inches on one corner due to expansive clay soil. Structural cracks in walls and floor. Required foundation underpinning and leveling."
+            },
+            {
+              "date": "2024-09-22",
+              "type": "Solar Power System Undersizing - Utility Integration",
+              "amount": 28000,
+              "status": "Closed",
+              "description": "Solar array undersized for household load. Frequent power outages during cloudy periods. Required additional solar panels and battery capacity."
+            },
+            {
+              "date": "2025-03-08",
+              "type": "Wind Damage - Roofing",
+              "amount": 18000,
+              "status": "Closed",
+              "description": "High winds (75 mph) lifted roofing panels. Inadequate fastening per wind load requirements. Roof replacement and enhanced attachment."
+            },
+            {
+              "date": "2025-07-30",
+              "type": "Schedule Delay - Remote Access",
+              "amount": 13000,
+              "status": "Closed",
+              "description": "Monsoon rains made access road impassable for 9 days. Crane delivery delayed. Homeowner penalty clause triggered."
+            }
+          ]
+        }
+      },
+      "reinsurance": {
+        "treaty_applicable": false,
+        "excess_of_loss_attachment": 250000,
+        "reinsurer": "N/A - Retained within captive",
+        "reinsurance_premium": 0
+      },
+      "special_conditions": {
+        "tail_coverage": "10-year extended reporting period for construction defects, septic systems, and foundation issues",
+        "off_grid_utility_warranty": {
+          "sublimit": 75000,
+          "coverage": "Septic, well, solar, and propane system failures within 36 months of installation"
+        },
+        "site_access_contingency": "Coverage for schedule delays due to weather-related access issues exceeding 7 days",
+        "wind_resistance_certification": "Mandatory certification for 110 mph wind loads in all rural installations"
+      }
+    },
+    {
+      "policy_number": "IMCI-STU-2026-004",
+      "insured_entity": {
+        "name": "Wildcat Housing Solutions Inc",
+        "entity_type": "Corporation",
+        "tax_id": "XX-XXXXXXX",
+        "address": {
+          "street": "2100 Campus Drive, Suite 150",
+          "city": "Tucson",
+          "state": "AZ",
+          "zip": "85719"
+        },
+        "contact": {
+          "name": "Jennifer Park, General Manager",
+          "phone": "(520) 555-4004",
+          "email": "j.park@wildcathousing.example"
+        }
+      },
+      "risk_class": {
+        "primary": "General Contractor - Prefab Housing Installation",
+        "sub_class": "Student Housing Market Segment",
+        "market_segment": "Student Housing - University of Arizona Focus",
+        "sic_code": "1521",
+        "naics_code": "236118"
+      },
+      "coverage": {
+        "limit_of_liability": {
+          "per_occurrence": 250000,
+          "aggregate": 1000000,
+          "currency": "USD"
+        },
+        "deductible": {
+          "amount": 5000,
+          "currency": "USD",
+          "applies_to": "per_occurrence"
+        },
+        "covered_perils": [
+          "Construction Defects - HVAC System Failures",
+          "Construction Defects - Plumbing Leaks",
+          "Construction Defects - Exterior Siding Issues",
+          "Utility Integration - Internet/Cable Installation Errors",
+          "Utility Integration - Electrical Circuit Overloads",
+          "Schedule Delays - Permit Processing",
+          "Schedule Delays - Subcontractor Availability",
+          "Code Compliance - Fire Safety Violations",
+          "Environmental - Stormwater Drainage Issues"
+        ]
+      },
+      "term": {
+        "effective_date": "2026-01-01",
+        "expiration_date": "2026-12-31",
+        "policy_period_days": 365
+      },
+      "premium": {
+        "base_premium": 50000,
+        "experience_modification": 2500,
+        "market_segment_factor": 0,
+        "volume_discount": -2500,
+        "safety_credit": 0,
+        "total_premium": 50000,
+        "currency": "USD",
+        "payment_terms": "Quarterly",
+        "installments": 4
+      },
+      "status": "Active",
+      "underwriting": {
+        "underwriter": "Integral Mass Captive Insurance - Internal Underwriting",
+        "approval_date": "2025-12-18",
+        "renewal_eligible": true,
+        "claims_made_basis": false,
+        "occurrence_basis": true
+      },
+      "risk_narrative": {
+        "summary": "STUDENT HOUSING INSTALLATION COVERAGE - TUCSON MARKET. The Insured specializes in prefab student housing installation near University of Arizona campus, focusing on high-density configurations with shared amenities. This policy responds to losses arising from HVAC system failures in desert climate, plumbing issues in multi-unit configurations, and schedule delays affecting academic year occupancy.",
+        "operations_description": "NATURE OF BUSINESS: The Insured installs prefab student housing units (350-500 sq ft) in clustered configurations with shared courtyards and amenities. Tucson's extreme heat (110°F+ summers) requires robust HVAC systems. Units feature high-efficiency cooling, low-flow plumbing fixtures, and fiber-optic internet infrastructure. Average installation timeline: 6-8 days per unit.\n\nANNUAL VOLUME: 55-70 units per year near University of Arizona campus. Peak installation: April-July (pre-fall semester). Units designed for 5-year lifespan with annual maintenance cycles.\n\nCLIMATE CONSIDERATIONS: Tucson's desert climate creates unique challenges: extreme heat stress on HVAC systems, monsoon flooding risks, and UV degradation of exterior materials. All installations require enhanced cooling capacity and stormwater management.",
+        "risk_factors": [
+          "HVAC SYSTEM STRESS: Tucson summer temperatures (110°F+) create extreme HVAC load. Undersized or improperly installed systems fail within first cooling season. HVAC issues represent 30% of claims.",
+          "MONSOON FLOODING: July-September monsoon season brings intense rainfall. Inadequate stormwater drainage causes flooding and water intrusion. Drainage issues represent 15% of claims.",
+          "PLUMBING COMPLEXITY: Multi-unit configurations share water supply lines. Single plumbing failure can affect multiple units. Plumbing issues represent 25% of claims.",
+          "INTERNET INFRASTRUCTURE: Students require high-speed internet. Fiber-optic installation errors create connectivity issues affecting multiple units. Internet issues represent 10% of claims.",
+          "UV DEGRADATION: Intense UV exposure degrades exterior siding, roofing, and sealants faster than Phoenix market. Material failures represent 15% of claims.",
+          "OCCUPANCY DEADLINES: University of Arizona fall semester start (mid-August) creates hard deadline. Delays trigger developer penalties and student housing shortages."
+        ],
+        "loss_control_measures": [
+          "ENHANCED HVAC SPECIFICATIONS: All units receive 20% oversized HVAC systems for Tucson climate. Third-party HVAC commissioning before occupancy.",
+          "STORMWATER MANAGEMENT: Engineered drainage plans for all sites. French drains, swales, and retention basins sized for 100-year storm events.",
+          "PLUMBING PRESSURE TESTING: All water supply lines pressure-tested at 150% operating pressure for 24 hours before occupancy. Leak detection systems in multi-unit configurations.",
+          "FIBER-OPTIC CERTIFICATION: Licensed low-voltage contractors install all internet infrastructure. Testing and certification of all connections before occupancy.",
+          "UV-RESISTANT MATERIALS: Upgraded exterior materials with enhanced UV resistance. Reflective roofing and heat-resistant siding specified for all units.",
+          "SCHEDULE BUFFER: Installation schedules include 15-day buffer before semester start. Contingency plans for weather delays and permit issues."
+        ],
+        "geographic_scope": "Pima County, Arizona (Tucson, South Tucson)",
+        "annual_revenue": 5100000,
+        "units_installed_annually": 62,
+        "average_unit_value": 75000
+      },
+      "claims_history": {
+        "prior_3_years": {
+          "total_claims": 6,
+          "total_incurred": 118000,
+          "claims_detail": [
+            {
+              "date": "2023-08-25",
+              "type": "HVAC System Failure - Construction Defect",
+              "amount": 32000,
+              "status": "Closed",
+              "description": "Undersized HVAC system failed during first heat wave (112°F). Emergency replacement of 4 units during peak occupancy period."
+            },
+            {
+              "date": "2024-07-18",
+              "type": "Monsoon Flooding - Drainage Issue",
+              "amount": 28000,
+              "status": "Closed",
+              "description": "Inadequate site grading caused flooding in 6 units during monsoon storm. Water damage to flooring and personal property. Drainage system redesign."
+            },
+            {
+              "date": "2024-10-05",
+              "type": "Plumbing Leak - Utility Integration",
+              "amount": 22000,
+              "status": "Closed",
+              "description": "Water supply line failure affected 8 units. Emergency repairs and temporary housing for displaced students."
+            },
+            {
+              "date": "2025-01-12",
+              "type": "Internet Infrastructure Failure",
+              "amount": 15000,
+              "status": "Closed",
+              "description": "Fiber-optic splice failure caused internet outage for 12 units during finals week. Emergency repairs and student compensation."
+            },
+            {
+              "date": "2025-06-20",
+              "type": "Exterior Siding Degradation - UV Damage",
+              "amount": 12000,
+              "status": "Closed",
+              "description": "Siding panels faded and warped after 18 months due to UV exposure. Replacement of affected panels on 3 units."
+            },
+            {
+              "date": "2025-08-10",
+              "type": "Schedule Delay - Permit Processing",
+              "amount": 9000,
+              "status": "Closed",
+              "description": "City of Tucson permit processing delayed installation by 6 days. Developer penalty clause triggered."
+            }
+          ]
+        }
+      },
+      "reinsurance": {
+        "treaty_applicable": false,
+        "excess_of_loss_attachment": 250000,
+        "reinsurer": "N/A - Retained within captive",
+        "reinsurance_premium": 0
+      },
+      "special_conditions": {
+        "tail_coverage": "10-year extended reporting period for construction defects",
+        "climate_specific_warranty": {
+          "sublimit": 60000,
+          "coverage": "HVAC failures and UV degradation issues within 36 months of installation"
+        },
+        "monsoon_season_coverage": "Enhanced coverage for stormwater drainage issues during July-September monsoon season",
+        "student_displacement_coverage": {
+          "sublimit": 25000,
+          "coverage": "Temporary housing costs for students displaced by covered perils during academic year"
+        }
+      }
+    },
+    {
+      "policy_number": "IMCI-MUL-2026-005",
+      "insured_entity": {
+        "name": "Heritage Home Builders LLC",
+        "entity_type": "Limited Liability Company",
+        "tax_id": "XX-XXXXXXX",
+        "address": {
+          "street": "5600 Legacy Lane",
+          "city": "Gilbert",
+          "state": "AZ",
+          "zip": "85296"
+        },
+        "contact": {
+          "name": "David Thompson, Owner/Operator",
+          "phone": "(480) 555-5005",
+          "email": "d.thompson@heritagehomebuilders.example"
+        }
+      },
+      "risk_class": {
+        "primary": "General Contractor - Prefab Housing Installation",
+        "sub_class": "Multi-Generational Housing Market Segment",
+        "market_segment": "Multi-Generational - Casita-Style ADU Installations",
+        "sic_code": "1521",
+        "naics_code": "236118"
+      },
+      "coverage": {
+        "limit_of_liability": {
+          "per_occurrence": 250000,
+          "aggregate": 1000000,
+          "currency": "USD"
+        },
+        "deductible": {
+          "amount": 5000,
+          "currency": "USD",
+          "applies_to": "per_occurrence"
+        },
+        "covered_perils": [
+          "Construction Defects - Casita Architectural Integration",
+          "Construction Defects - Shared Courtyard Features",
+          "Utility Integration - Shared HVAC System Issues",
+          "Utility Integration - Landscape Irrigation Failures",
+          "Code Compliance - HOA Architectural Review Violations",
+          "Code Compliance - Setback and Easement Issues",
+          "Schedule Delays - HOA Approval Process",
+          "Property Damage - Existing Home Integration",
+          "Warranty Claims - Long-Term Defect Discovery"
+        ]
+      },
+      "term": {
+        "effective_date": "2026-01-01",
+        "expiration_date": "2026-12-31",
+        "policy_period_days": 365
+      },
+      "premium": {
+        "base_premium": 50000,
+        "experience_modification": -2500,
+        "market_segment_factor": -5000,
+        "volume_discount": -2500,
+        "safety_credit": -5000,
+        "total_premium": 35000,
+        "currency": "USD",
+        "payment_terms": "Quarterly",
+        "installments": 4
+      },
+      "status": "Active",
+      "underwriting": {
+        "underwriter": "Integral Mass Captive Insurance - Internal Underwriting",
+        "approval_date": "2025-12-12",
+        "renewal_eligible": true,
+        "claims_made_basis": false,
+        "occurrence_basis": true
+      },
+      "risk_narrative": {
+        "summary": "MULTI-GENERATIONAL CASITA INSTALLATION COVERAGE. The Insured specializes in installing prefab casita-style ADUs in established Gilbert neighborhoods, emphasizing architectural integration with existing homes and shared outdoor living spaces. This policy responds to losses arising from HOA compliance issues, architectural integration challenges, and shared utility system failures.",
+        "operations_description": "NATURE OF BUSINESS: The Insured installs prefab casitas (500-750 sq ft) designed to match existing home architecture in Gilbert's master-planned communities. Installations include shared courtyards, covered patios, and integrated landscaping creating seamless indoor-outdoor living spaces. Units feature southwestern architectural elements (stucco, tile roofing, arched doorways) matching existing homes. Average installation timeline: 10-14 days per unit.\n\nHOA COORDINATION: Gilbert's master-planned communities have strict HOA architectural review requirements. All installations require HOA pre-approval of designs, materials, and colors. HOA approval process adds 30-60 days to project timeline.\n\nANNUAL VOLUME: 35-45 units per year in Gilbert, Queen Creek, and Chandler master-planned communities. Peak installation: October-April (avoiding extreme summer heat). Units support rent-to-equity financial instruments for multi-generational living.",
+        "risk_factors": [
+          "HOA COMPLIANCE COMPLEXITY: Each HOA has unique architectural guidelines. Violations discovered post-installation require costly modifications. HOA issues represent 20% of claims.",
+          "ARCHITECTURAL INTEGRATION: Casitas must match existing home's style, materials, and colors. Mismatches create aesthetic disputes and resale value impacts. Integration issues represent 25% of claims.",
+          "SHARED UTILITY SYSTEMS: Some installations share HVAC, water heaters, or irrigation systems with main house. Shared system failures create liability disputes. Utility issues represent 30% of claims.",
+          "EXISTING HOME DAMAGE: Installation activities (crane operations, excavation, utility trenching) risk damaging existing homes. Property damage represents 15% of claims.",
+          "SETBACK VIOLATIONS: HOA setback requirements vary by lot. Survey errors can result in setback violations requiring casita relocation. Setback issues represent 5% of claims.",
+          "LONG-TERM WARRANTY EXPOSURE: 10-year construction defect tail coverage creates extended liability. Defects discovered years later trigger claims affecting financial instruments."
+        ],
+        "loss_control_measures": [
+          "HOA PRE-APPROVAL PROCESS: Comprehensive HOA architectural review before contract execution. Direct coordination with HOA architectural committees. Design modifications incorporated before installation.",
+          "ARCHITECTURAL MATCHING PROTOCOL: Detailed documentation of existing home's materials, colors, and architectural features. Material samples submitted to homeowner for approval at multiple stages.",
+          "UTILITY SYSTEM ANALYSIS: Engineering review of shared utility system capacity before installation. Independent systems specified when shared capacity inadequate.",
+          "EXISTING HOME PROTECTION: Comprehensive protection protocols during installation. Pre-installation photo documentation of existing home condition. Crane operation safety zones established.",
+          "SURVEY CERTIFICATION: Licensed surveyor verifies setbacks, easements, and property lines before foundation work. Survey stakes maintained throughout installation.",
+          "EXTENDED WARRANTY PROGRAM: Proactive 3-year and 7-year inspection program identifies potential defects before they escalate. Preventive maintenance recommendations to homeowners."
+        ],
+        "geographic_scope": "Maricopa County, Arizona (Gilbert, Queen Creek, Chandler)",
+        "annual_revenue": 4800000,
+        "units_installed_annually": 40,
+        "average_unit_value": 110000
+      },
+      "claims_history": {
+        "prior_3_years": {
+          "total_claims": 3,
+          "total_incurred": 68000,
+          "claims_detail": [
+            {
+              "date": "2024-04-15",
+              "type": "HOA Architectural Violation",
+              "amount": 32000,
+              "status": "Closed",
+              "description": "Casita roof tile color did not match HOA-approved sample. HOA required complete roof replacement. Tile removal and replacement with approved color."
+            },
+            {
+              "date": "2024-11-20",
+              "type": "Shared HVAC System Failure - Utility Integration",
+              "amount": 24000,
+              "status": "Closed",
+              "description": "Casita added to existing home's HVAC system without capacity analysis. System failed during summer heat. Required separate HVAC system installation for casita."
+            },
+            {
+              "date": "2025-06-10",
+              "type": "Existing Home Damage - Property Damage",
+              "amount": 12000,
+              "status": "Closed",
+              "description": "Crane operation damaged existing home's roof tiles and rain gutter. Repair of damaged areas and replacement of affected tiles."
+            }
+          ]
+        }
+      },
+      "reinsurance": {
+        "treaty_applicable": false,
+        "excess_of_loss_attachment": 250000,
+        "reinsurer": "N/A - Retained within captive",
+        "reinsurance_premium": 0
+      },
+      "special_conditions": {
+        "tail_coverage": "10-year extended reporting period for construction defects and architectural integration issues",
+        "hoa_compliance_warranty": {
+          "sublimit": 50000,
+          "coverage": "HOA violations discovered within 24 months requiring corrective modifications"
+        },
+        "existing_home_protection": {
+          "sublimit": 100000,
+          "coverage": "Damage to existing homes during installation activities"
+        },
+        "architectural_integration_guarantee": "Coverage for aesthetic disputes requiring modifications within 12 months of installation"
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_policies": 5,
+    "total_premium_income": 222500,
+    "total_limit_aggregate": 5000000,
+    "average_premium": 44500,
+    "market_segment_distribution": {
+      "Student Housing": 2,
+      "Multi-Generational": 2,
+      "Rural Development": 1
+    },
+    "total_units_installed_annually": 252,
+    "claims_free_policies": 0,
+    "total_claims_3_years": 20,
+    "total_incurred_3_years": 467500,
+    "loss_ratio_3_years": 0.70
+  }
+}
