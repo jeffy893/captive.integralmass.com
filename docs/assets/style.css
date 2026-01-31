@@ -533,15 +533,77 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .nav-links {
+    /* Compact header for mobile */
+    nav {
+        padding: 0.5rem 15px;
         flex-direction: column;
         gap: 0.5rem;
     }
     
-    .hero h2 {
-        font-size: 1.8rem;
+    .logo h1 {
+        font-size: 1.3rem;
+        margin-bottom: 0;
     }
     
+    .tagline {
+        font-size: 0.75rem;
+        margin-top: 0.2rem;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .nav-links li {
+        flex: 0 0 auto;
+    }
+    
+    .nav-links a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.85rem;
+    }
+    
+    /* Compact hero section */
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Compact brand bar */
+    .brand-bar {
+        padding: 0.4rem 0;
+        font-size: 0.8rem;
+    }
+    
+    .brand-bar .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+    }
+    
+    .brand-links {
+        margin-top: 0.3rem;
+        gap: 0.8rem;
+    }
+    
+    .brand-links a {
+        font-size: 0.8rem;
+    }
+    
+    /* Other mobile adjustments */
     .innovation-content {
         grid-template-columns: 1fr;
     }
@@ -555,13 +617,13 @@ footer {
         gap: 2rem;
     }
     
-    .brand-bar .container {
-        flex-direction: column;
-        text-align: center;
+    /* Reduce section padding on mobile */
+    section {
+        padding: 2rem 0;
     }
     
-    .brand-links {
-        margin-top: 0.5rem;
+    .container {
+        padding: 0 15px;
     }
 }
 
