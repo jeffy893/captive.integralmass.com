@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Mortgage-as-a-Service (MaaS) | Integral Mass Captive Insurance</title>
+    
+    <!-- Favicon and Apple Touch Icons -->
+    <link rel="icon" type="image/png" href="assets/captive-iMASS-logo.png">
+    <link rel="apple-touch-icon" href="assets/captive-iMASS-logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/captive-iMASS-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/captive-iMASS-logo.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/captive-iMASS-logo.png">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Mortgage-as-a-Service | Integral Mass Captive Insurance">
+    <meta property="og:description" content="MaaS: Integrated mortgage API for ADU financing. Apply for prefab housing loans directly on our platform. Targeting Student Housing and Rural Development markets.">
+    <meta property="og:image" content="https://captive.integralmass.com/assets/captive-iMASS-logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://captive.integralmass.com/mortgage-as-a-service.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Integral Mass Captive Insurance">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mortgage-as-a-Service | Integral Mass Captive Insurance">
+    <meta name="twitter:description" content="MaaS: Integrated mortgage API for ADU financing. Apply for prefab housing loans directly on our platform.">
+    <meta name="twitter:image" content="https://captive.integralmass.com/assets/captive-iMASS-logo.png">
+    
+    <link rel="stylesheet" href="assets/style.css?v=1769384316">
+    <style>
+        .maas-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        .maas-hero h2 { color: white; }
+        .maas-hero .lead { color: rgba(255,255,255,0.9); }
+        
+        .market-focus-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .market-focus-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .market-focus-card .card-header {
+            padding: 25px;
+            color: white;
+        }
+        .market-focus-card.student .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .market-focus-card.rural .card-header {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .market-focus-card .card-header h3 {
+            color: white;
+            margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .market-focus-card .card-body {
+            padding: 25px;
+        }
+        .market-focus-card .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .market-focus-card .stat {
+            text-align: center;
+        }
+        .market-focus-card .stat-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2C3E50;
+        }
+        .market-focus-card .stat-label {
+            font-size: 11px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        
+        .api-section {
+            background: #1a1a2e;
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        .api-section h3 { color: white; }
+        .api-diagram {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr auto 1fr;
+            gap: 20px;
+            align-items: center;
+            margin: 30px 0;
+        }
+        .api-box {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .api-box.highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+        }
+        .api-arrow {
+            font-size: 24px;
+            color: rgba(255,255,255,0.5);
+        }
+        .code-block {
+            background: #0d1117;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .code-block .comment { color: #8b949e; }
+        .code-block .keyword { color: #ff7b72; }
+        .code-block .string { color: #a5d6ff; }
+        .code-block .property { color: #79c0ff; }
+        .code-block .number { color: #ffa657; }
+        
+        .application-form-preview {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 30px 0;
+        }
+        .form-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+        }
+        .form-header h3 { color: white; margin: 0; }
+        .form-body {
+            padding: 30px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        .btn-submit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .benefit-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .benefit-card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .benefit-card h4 {
+            margin-bottom: 10px;
+            color: #2C3E50;
+        }
+        .benefit-card p {
+            font-size: 13px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .market-focus-cards { grid-template-columns: 1fr; }
+            .api-diagram { grid-template-columns: 1fr; text-align: center; }
+            .api-arrow { transform: rotate(90deg); }
+            .form-row { grid-template-columns: 1fr; }
+            .benefits-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Brand Bar -->
+    <div class="brand-bar">
+        <div class="container">
+            <div>Part of the <a href="https://www.integralmass.com" target="_blank"><strong>Integral Mass</strong></a> ecosystem</div>
+            <div class="brand-links">
+                <a href="https://jefferson.cloud" target="_blank">Socialize</a>
+                <a href="https://richards.systems" target="_blank">Decode</a>
+                <a href="https://richards.plus" target="_blank">Consult</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="https://www.integralmass.com" target="_blank">Integral Mass Captive</a></h1>
+                <p class="tagline">Actuarially Informed. Awaiting Formal Review.</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-gap-coverage.html">Home Gap</a></li>
+                <li><a href="mortgage-as-a-service.html" class="active">MaaS</a></li>
+                <li><a href="tenant-portal.html">Tenant Portal</a></li>
+                <li><a href="markets.html">Markets</a></li>
+                <li><a href="simulation.html">Simulation</a></li>
+                <li><a href="compliance.html">Compliance</a></li>
+                <li><a href="organization.html">Cell Structure</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="maas-hero">
+            <div class="hero-content">
+                <h2>Mortgage-as-a-Service (MaaS)</h2>
+                <p class="lead">Integrated financing for ADU and prefab housing. Apply for mortgages directly on our platform through API-powered lending partners—streamlining the path from concept to construction.</p>
+                <div class="cta-buttons">
+                    <a href="#demo-form" class="btn btn-primary">See Demo Application</a>
+                    <a href="#api-integration" class="btn btn-secondary" style="background: transparent; border: 2px solid white;">API Documentation</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview">
+            <div class="container">
+                <h2>Target Markets: Student Housing & Rural Development</h2>
+                <p class="section-intro">MaaS is designed specifically for the underserved financing needs of our two highest-growth market segments.</p>
+                
+                <div class="market-focus-cards">
+                    <!-- Student Housing Card -->
+                    <div class="market-focus-card student">
+                        <div class="card-header">
+                            <h3>🎓 Student Housing Market</h3>
+                            <p>ADUs near university campuses for student rental income</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="stats-row">
+                                <div class="stat">
+                                    <div class="stat-value">$120K</div>
+                                    <div class="stat-label">Avg Loan Size</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">$1,000</div>
+                                    <div class="stat-label">Monthly Rent</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">10%</div>
+                                    <div class="stat-label">Gross Yield</div>
+                                </div>
+                            </div>
+                            
+                            <h4>Why MaaS for Student Housing?</h4>
+                            <ul>
+                                <li><strong>Predictable Demand:</strong> University enrollment provides stable tenant pipeline</li>
+                                <li><strong>Quick ROI:</strong> High rental rates near campuses accelerate payback</li>
+                                <li><strong>Seasonal Flexibility:</strong> Summer short-term rentals boost income</li>
+                                <li><strong>Appreciation:</strong> Campus-adjacent properties historically outperform</li>
+                            </ul>
+                            
+                            <h4>Ideal Borrowers</h4>
+                            <ul>
+                                <li>Homeowners within 2 miles of ASU, U of A, NAU campuses</li>
+                                <li>Real estate investors targeting student rental market</li>
+                                <li>Parents building ADUs for college-age children</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Rural Development Card -->
+                    <div class="market-focus-card rural">
+                        <div class="card-header">
+                            <h3>🌾 Rural Development Market</h3>
+                            <p>Prefab housing for underserved rural communities</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="stats-row">
+                                <div class="stat">
+                                    <div class="stat-value">$135K</div>
+                                    <div class="stat-label">Avg Loan Size</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">$900</div>
+                                    <div class="stat-label">Monthly Rent</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">8%</div>
+                                    <div class="stat-label">Gross Yield</div>
+                                </div>
+                            </div>
+                            
+                            <h4>Why MaaS for Rural Development?</h4>
+                            <ul>
+                                <li><strong>Underserved Market:</strong> Traditional lenders avoid rural properties</li>
+                                <li><strong>Lower Competition:</strong> Less saturated than urban markets</li>
+                                <li><strong>Community Impact:</strong> Address housing shortages in rural Arizona</li>
+                                <li><strong>Land Value:</strong> Large lots provide expansion potential</li>
+                            </ul>
+                            
+                            <h4>Ideal Borrowers</h4>
+                            <ul>
+                                <li>Rural landowners seeking to add rental income</li>
+                                <li>Agricultural workers needing workforce housing</li>
+                                <li>Retirees building guest houses on rural properties</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview" style="background: #f8f9fa;">
+            <div class="container">
+                <h2>The MaaS Value Proposition</h2>
+                <p class="section-intro">One platform. Insurance + Financing + Installation. A unified experience for ADU buyers.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="icon">🔗</div>
+                        <h4>Unified Platform</h4>
+                        <p>Apply for financing, bind insurance, and schedule installation—all in one place. No juggling multiple vendors.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon">⚡</div>
+                        <h4>Instant Pre-Qualification</h4>
+                        <p>API-powered credit decisions in minutes, not weeks. Know your budget before you design.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon">🛡️</div>
+                        <h4>Bundled Protection</h4>
+                        <p>Home Gap Coverage automatically quoted with your mortgage. One payment, complete protection.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon">📊</div>
+                        <h4>Smart Underwriting</h4>
+                        <p>Our captive's risk data improves lending decisions. Better rates for lower-risk projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="api-integration" class="overview">
+            <div class="container">
+                <h2>API Integration: How It Works</h2>
+                <p class="section-intro">MaaS leverages mortgage API providers (conceptually, services like Pyron) to embed lending directly into our platform.</p>
+                
+                <div class="api-section">
+                    <h3>System Architecture</h3>
+                    <div class="api-diagram">
+                        <div class="api-box">
+                            <div style="font-size: 32px; margin-bottom: 10px;">👤</div>
+                            <strong>Applicant</strong>
+                            <p style="font-size: 12px; margin-top: 5px;">Homeowner or Developer</p>
+                        </div>
+                        <div class="api-arrow">→</div>
+                        <div class="api-box highlight">
+                            <div style="font-size: 32px; margin-bottom: 10px;">🏠</div>
+                            <strong>Integral Mass Platform</strong>
+                            <p style="font-size: 12px; margin-top: 5px;">Unified UI + Captive Insurance</p>
+                        </div>
+                        <div class="api-arrow">→</div>
+                        <div class="api-box">
+                            <div style="font-size: 32px; margin-bottom: 10px;">🏦</div>
+                            <strong>Mortgage API (Pyron)</strong>
+                            <p style="font-size: 12px; margin-top: 5px;">Lending Partner Network</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Sample API Integration</h3>
+                    <div class="code-block">
+<span class="comment">// Conceptual API call to mortgage provider</span>
+<span class="keyword">const</span> applicationResponse = <span class="keyword">await</span> pyronAPI.submitApplication({
+  <span class="property">applicant</span>: {
+    <span class="property">name</span>: <span class="string">"Jane Smith"</span>,
+    <span class="property">ssn</span>: <span class="string">"XXX-XX-XXXX"</span>,
+    <span class="property">annualIncome</span>: <span class="number">85000</span>,
+    <span class="property">creditScoreRange</span>: <span class="string">"720-750"</span>
+  },
+  <span class="property">property</span>: {
+    <span class="property">type</span>: <span class="string">"ADU_PREFAB"</span>,
+    <span class="property">address</span>: <span class="string">"123 Campus Drive, Tempe, AZ"</span>,
+    <span class="property">marketSegment</span>: <span class="string">"STUDENT_HOUSING"</span>,
+    <span class="property">estimatedValue</span>: <span class="number">120000</span>
+  },
+  <span class="property">loan</span>: {
+    <span class="property">amount</span>: <span class="number">108000</span>,
+    <span class="property">downPayment</span>: <span class="number">12000</span>,
+    <span class="property">term</span>: <span class="number">15</span>,
+    <span class="property">type</span>: <span class="string">"CONSTRUCTION_TO_PERM"</span>
+  },
+  <span class="property">insurance</span>: {
+    <span class="property">captiveId</span>: <span class="string">"IMCI-2026"</span>,
+    <span class="property">homeGapCoverage</span>: <span class="keyword">true</span>,
+    <span class="property">gcContractorId</span>: <span class="string">"GC-007"</span>
+  }
+});
+
+<span class="comment">// Response includes pre-qualification decision</span>
+<span class="keyword">if</span> (applicationResponse.<span class="property">preQualified</span>) {
+  console.log(<span class="string">`Approved for $${applicationResponse.approvedAmount}`</span>);
+  console.log(<span class="string">`Rate: ${applicationResponse.interestRate}%`</span>);
+  console.log(<span class="string">`Monthly Payment: $${applicationResponse.monthlyPayment}`</span>);
+}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo-form" class="overview" style="background: #f8f9fa;">
+            <div class="container">
+                <h2>Demo: ADU Mortgage Application</h2>
+                <p class="section-intro">This is a conceptual demonstration of how the MaaS application flow would work on our platform.</p>
+                
+                <div class="application-form-preview">
+                    <div class="form-header">
+                        <h3>🏠 ADU Mortgage Pre-Qualification</h3>
+                        <p style="margin: 5px 0 0 0; opacity: 0.9;">Powered by Mortgage API Integration</p>
+                    </div>
+                    <div class="form-body">
+                        <div style="background: #fff3cd; border: 1px solid #ffc107; padding: 15px; border-radius: 8px; margin-bottom: 25px;">
+                            <strong>⚠️ Demonstration Only:</strong> This form is non-functional and for illustration purposes only. No data is collected or transmitted.
+                        </div>
+                        
+                        <h4 style="margin-bottom: 20px; color: #2C3E50;">Step 1: Applicant Information</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Legal Name</label>
+                                <input type="text" placeholder="Jane Smith" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="jane@example.com" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Annual Household Income</label>
+                                <input type="text" placeholder="$85,000" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Estimated Credit Score</label>
+                                <select disabled>
+                                    <option>Select range...</option>
+                                    <option>760+</option>
+                                    <option selected>720-759</option>
+                                    <option>680-719</option>
+                                    <option>640-679</option>
+                                    <option>Below 640</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <h4 style="margin: 30px 0 20px 0; color: #2C3E50;">Step 2: Property Details</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Property Address</label>
+                                <input type="text" placeholder="123 Campus Drive, Tempe, AZ 85281" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Market Segment</label>
+                                <select disabled>
+                                    <option>Select market...</option>
+                                    <option selected>🎓 Student Housing</option>
+                                    <option>🌾 Rural Development</option>
+                                    <option>👨‍👩‍👧‍👦 Multi-Generational</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>ADU Type</label>
+                                <select disabled>
+                                    <option>Select type...</option>
+                                    <option>Studio (350 sq ft)</option>
+                                    <option selected>1BR/1BA (450 sq ft)</option>
+                                    <option>2BR/1BA (650 sq ft)</option>
+                                    <option>2BR/2BA (800 sq ft)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Estimated Project Cost</label>
+                                <input type="text" placeholder="$120,000" disabled>
+                            </div>
+                        </div>
+                        
+                        <h4 style="margin: 30px 0 20px 0; color: #2C3E50;">Step 3: Loan Details</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Down Payment</label>
+                                <input type="text" placeholder="$12,000 (10%)" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Loan Term</label>
+                                <select disabled>
+                                    <option>Select term...</option>
+                                    <option>10 years</option>
+                                    <option selected>15 years</option>
+                                    <option>20 years</option>
+                                    <option>30 years</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <h4 style="margin: 30px 0 20px 0; color: #2C3E50;">Step 4: Insurance Options</h4>
+                        <div style="background: #e8f5e9; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                            <label style="display: flex; align-items: center; gap: 10px; cursor: not-allowed;">
+                                <input type="checkbox" checked disabled>
+                                <span><strong>Include Home Gap Coverage</strong> — Protect against cost overruns from fortuitous events (+$3,000 estimated premium)</span>
+                            </label>
+                        </div>
+                        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                            <label style="display: flex; align-items: center; gap: 10px; cursor: not-allowed;">
+                                <input type="checkbox" checked disabled>
+                                <span><strong>Assign Captive-Approved GC</strong> — Match with a pre-vetted General Contractor from our network</span>
+                            </label>
+                        </div>
+                        
+                        <button class="btn-submit" disabled style="opacity: 0.7; cursor: not-allowed;">
+                            🔒 Get Pre-Qualified (Demo Only)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sample Response Preview -->
+                <div style="background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); padding: 30px; margin-top: 30px;">
+                    <h4 style="color: #27AE60; margin-bottom: 20px;">✅ Sample Pre-Qualification Response</h4>
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;">
+                        <div>
+                            <div style="font-size: 28px; font-weight: bold; color: #27AE60;">$108,000</div>
+                            <div style="font-size: 12px; color: #666; text-transform: uppercase;">Approved Amount</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 28px; font-weight: bold; color: #3498DB;">6.75%</div>
+                            <div style="font-size: 12px; color: #666; text-transform: uppercase;">Interest Rate</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 28px; font-weight: bold; color: #9B59B6;">$955</div>
+                            <div style="font-size: 12px; color: #666; text-transform: uppercase;">Monthly Payment</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 28px; font-weight: bold; color: #E67E22;">15 yrs</div>
+                            <div style="font-size: 12px; color: #666; text-transform: uppercase;">Loan Term</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee;">
+                        <h5 style="margin-bottom: 15px;">Bundled Services Included:</h5>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+                            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                                <strong>🛡️ Home Gap Coverage</strong>
+                                <p style="font-size: 13px; color: #666; margin: 5px 0 0 0;">$3,000/yr premium • $42K max coverage</p>
+                            </div>
+                            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                                <strong>🏗️ Assigned GC</strong>
+                                <p style="font-size: 13px; color: #666; margin: 5px 0 0 0;">Desert Prefab Pros (GC-007) • 4.8★ rating</p>
+                            </div>
+                            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                                <strong>📅 Est. Completion</strong>
+                                <p style="font-size: 13px; color: #666; margin: 5px 0 0 0;">45 days from permit • Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview">
+            <div class="container">
+                <h2>Integration Roadmap</h2>
+                <p class="section-intro">MaaS is a conceptual feature planned for future development. Here's the proposed implementation timeline.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 30px;">
+                    <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-top: 4px solid #27AE60;">
+                        <div style="font-size: 12px; color: #27AE60; font-weight: bold; margin-bottom: 10px;">PHASE 1</div>
+                        <h4 style="margin-bottom: 10px;">API Partner Selection</h4>
+                        <p style="font-size: 13px; color: #666;">Evaluate mortgage API providers (Pyron, Blend, etc.) for ADU/construction loan capabilities.</p>
+                        <div style="font-size: 12px; color: #999; margin-top: 15px;">Q3 2026</div>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-top: 4px solid #3498DB;">
+                        <div style="font-size: 12px; color: #3498DB; font-weight: bold; margin-bottom: 10px;">PHASE 2</div>
+                        <h4 style="margin-bottom: 10px;">Integration Development</h4>
+                        <p style="font-size: 13px; color: #666;">Build API connections, UI components, and data flows between platform and lending partners.</p>
+                        <div style="font-size: 12px; color: #999; margin-top: 15px;">Q4 2026</div>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-top: 4px solid #9B59B6;">
+                        <div style="font-size: 12px; color: #9B59B6; font-weight: bold; margin-bottom: 10px;">PHASE 3</div>
+                        <h4 style="margin-bottom: 10px;">Pilot Program</h4>
+                        <p style="font-size: 13px; color: #666;">Launch with select GCs and borrowers in Student Housing market near ASU campus.</p>
+                        <div style="font-size: 12px; color: #999; margin-top: 15px;">Q1 2027</div>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-top: 4px solid #E67E22;">
+                        <div style="font-size: 12px; color: #E67E22; font-weight: bold; margin-bottom: 10px;">PHASE 4</div>
+                        <h4 style="margin-bottom: 10px;">Full Rollout</h4>
+                        <p style="font-size: 13px; color: #666;">Expand to Rural Development market and all 12 GCs. Add chatbot UI for guided applications.</p>
+                        <div style="font-size: 12px; color: #999; margin-top: 15px;">Q2 2027</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Interested in MaaS Integration?</h2>
+                <p>Learn more about our market segments and how MaaS fits into the Integral Mass ecosystem.</p>
+                <div class="cta-buttons">
+                    <a href="markets.html" class="btn btn-primary">View All Markets</a>
+                    <a href="home-gap-coverage.html" class="btn btn-secondary">Home Gap Coverage</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Integral Mass Captive</h3>
+                <p>A feasibility study rendered in code, presenting actuarially informed concepts for captive insurance serving prefab housing installation across three distinct market segments. Awaiting formal actuarial review.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/richards.plus/" target="_blank" title="Instagram">
+                        <img src="https://cdn.simpleicons.org/instagram/white" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jefferson-richards/" target="_blank" title="LinkedIn">
+                        <img src="assets/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/jeffy893" target="_blank" title="GitHub">
+                        <img src="https://cdn.simpleicons.org/github/white" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home-gap-coverage.html">Home Gap Coverage</a></li>
+                    <li><a href="mortgage-as-a-service.html">Mortgage-as-a-Service</a></li>
+                    <li><a href="tenant-portal.html">Tenant Portal</a></li>
+                    <li><a href="markets.html">Market Segments</a></li>
+                    <li><a href="simulation.html">Simulation Results</a></li>
+                    <li><a href="compliance.html">Regulatory Compliance</a></li>
+                    <li><a href="organization.html">Cell Structure (PCC)</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Integral Mass Network</h3>
+                <ul class="footer-links">
+                    <li><a href="https://www.integralmass.com" target="_blank">Integral Mass</a></li>
+                    <li><a href="https://jefferson.cloud" target="_blank">Socialize</a></li>
+                    <li><a href="https://richards.systems" target="_blank">Decode</a></li>
+                    <li><a href="https://richards.plus" target="_blank">Consult</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Integral Mass Captive Insurance. Prepared for Arizona Captive Insurance Association review.</p>
+                <p class="disclaimer">This is a feasibility study rendered in code. All simulations use industry-standard actuarial methods. These are actuarially informed concepts awaiting formal review.</p>
+                <p class="disclaimer" style="margin-top: 10px; font-weight: bold;">Important: This captive insurance model covers only fortuitous risk (accidental, unforeseen events such as construction defects, utility failures, and schedule delays). Speculative risk (market fluctuations, investment losses, or business gambles) is expressly excluded from coverage.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

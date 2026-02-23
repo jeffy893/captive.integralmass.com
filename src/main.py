@@ -329,7 +329,7 @@ This simulation demonstrates:
 
 ## Conclusion
 
-The Integral Mass Captive Insurance model is actuarially sound and operationally viable for Arizona Captive Insurance Association licensing.
+The Integral Mass Captive Insurance model presents actuarially informed concepts that are operationally viable for Arizona Captive Insurance Association licensing. Formal actuarial review is pending.
 """
     
     with open('../docs/simulation_summary.md', 'w') as f:
