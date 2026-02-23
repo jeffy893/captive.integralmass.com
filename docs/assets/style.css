@@ -1338,3 +1338,11 @@ nav {
 table {
     min-width: 100%;
 }
+
+
+/* Media Section (YouTube/SoundCloud) Mobile */
+@media (max-width: 768px) {
+    [style*="grid-template-columns: 1fr 1fr"][style*="gap: 30px"] {
+        grid-template-columns: 1fr !important;
+    }
+}
